@@ -59,6 +59,9 @@ p {
 
   & > div {
     margin-bottom: $grid-gutter-width;
+    img {
+      cursor: pointer;
+    }
   }
 }
 
