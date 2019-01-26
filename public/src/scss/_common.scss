@@ -69,15 +69,23 @@ p {
 }
 
 .author-image {
-  @extend .col-sm-3;
-  max-width: 35%;
-  flex-basis: 35%;
+  @extend .col-md-3;
 }
 
 .author-introducing {
-  @extend .col-sm-9;
-  max-width: 65%;
-  flex-basis: 65%;
+  @extend .col-md-9;
+}
+
+@include media-breakpoint-up(md) {
+  .author-image {
+    max-width: 35%;
+    flex-basis: 35%;
+  }
+
+  .author-introducing {
+    max-width: 65%;
+    flex-basis: 65%;
+  }
 }
 
 .farewell {
