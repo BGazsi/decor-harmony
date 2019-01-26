@@ -1,0 +1,97 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: $bg-color;
+  color: #666;
+}
+
+.header {
+  background-image: url('../img/header_03.png');
+  height: $header-height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: $bg-color;
+}
+
+.first-section {
+  margin-top: $header-top-offset - $header-height;
+}
+
+.logo {
+  margin-bottom: 100px;
+}
+
+.hello {
+  margin-bottom: 80px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #2D7F82;
+  font-weight: 700;
+  font-size: 16px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
+.blue-section {
+  margin-top: -100px;
+  margin-bottom: 30px;
+  padding-top: 150px;
+  padding-bottom: 110px;
+  background-image: url('../img/cloud.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #8c88880d;
+}
+
+.gallery {
+  margin-top: 35px;
+
+  & > div {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.author-image,
+.author-introducing {
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.author-image {
+  @extend .col-sm-3;
+  max-width: 35%;
+  flex-basis: 35%;
+}
+
+.author-introducing {
+  @extend .col-sm-9;
+  max-width: 65%;
+  flex-basis: 65%;
+}
+
+.farewell {
+  width: 75%;
+  margin: 50px auto;
+  line-height: 27px;
+}
+
+.footer {
+  background-image: url('../img/footer.png');
+  height: $header-height;
+  margin-top: $footer-bottom-offset - $header-height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: $bg-color;
+}
