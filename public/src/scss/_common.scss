@@ -106,3 +106,15 @@ p {
   background-position: center top;
   background-color: $bg-color;
 }
+
+@include media-breakpoint-down(sm) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .blue-section {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
