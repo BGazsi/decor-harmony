@@ -12,4 +12,5 @@ ready(function () {
   lightGallery(document.querySelector('.gallery-3'))
   lightGallery(document.querySelector('.gallery-4'))
   lightGallery(document.querySelector('.gallery-5'))
+  lightGallery(document.querySelector('.gallery-6'))
 })
