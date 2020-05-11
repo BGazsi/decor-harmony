@@ -57,7 +57,7 @@ p {
 .gallery {
   margin-top: 35px;
 
-  & > div {
+  &:not(.gallery-0) > div {
     margin-bottom: $grid-gutter-width;
     img {
       cursor: pointer;
