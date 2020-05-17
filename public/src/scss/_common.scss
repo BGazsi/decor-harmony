@@ -59,6 +59,7 @@ p {
 
   &:not(.gallery-0) > div {
     margin-bottom: $grid-gutter-width;
+
     img {
       cursor: pointer;
     }
@@ -97,14 +98,42 @@ p {
   line-height: 27px;
 }
 
+.btn-primary {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+label {
+  &.required {
+    &::after {
+      color: red;
+      content: ' *';
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
 .footer {
-  background-image: url('../img/footer.png');
-  height: $header-height;
-  margin-top: $footer-bottom-offset - $header-height;
+  background-image: url('../img/footer copy.png');
+  height: $footer-height;
+  margin-top: $footer-bottom-offset - $footer-height;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-color: $bg-color;
+  background-color: transparent;
 }
 
 @include media-breakpoint-down(sm) {

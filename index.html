@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/dist/css/lightgallery.min.css">
     <link rel="icon" type="image/png" href="./public/dist/img/logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -67,7 +68,8 @@
             <h2>Esküvői meghívó</h2>
             <p>
                 Bizonyára körvonalazódik már Benned egy kép az esküvővel kapcsolatban, mely színek dominálnak, milyen ruhát viselsz majd,
-                hány főt vártok, mely virágok a kedvenceid stb. A <strong>Nagy Nap hangulatának előfutára a meghívó</strong>, ezért érdemes alaposan
+                hány főt vártok, mely virágok a kedvenceid stb. A <strong>Nagy Nap hangulatának előfutára a meghívó</strong>, ezért érdemes
+                alaposan
                 megtervezni, hiszen a meghívottak ezáltal kaphatnak egy kis ízelítőt a Ti személyiségetekből és abból, mire számíthatnak a
                 helyszínen. Mondd el elképzeléseidet, mesélj magatokról, így tudjuk Rátok szabni az esküvői arculatot. Természetesen
                 lehetőség van arra is, hogy már meglévő meghívóink közül válassz - ennek előnye, hogy az elkészülési idő lerövidül és több
@@ -75,7 +77,8 @@
             </p>
             <p>
                 A teljesség igénye nélkül bemutatunk néhány olyan meghívó típust, amelyet nagy örömmel készítünk el számotokra. A Decor
-                Harmony repertoárjában visszatérő kellék a <strong>viaszpecsét</strong>, a <strong>pauszpapír</strong> és a <strong>bélelt boríték</strong>, mert szerintünk csodaszép dolgokat
+                Harmony repertoárjában visszatérő kellék a <strong>viaszpecsét</strong>, a <strong>pauszpapír</strong> és a <strong>bélelt
+                boríték</strong>, mert szerintünk csodaszép dolgokat
                 lehet velük alkotni, főleg ha kombináljuk őket. Széles színválaszték áll rendelkezésre kiemelkedő minőségű viaszainkból, így
                 remekül illeszthetőek a megálmodott színvilágba.
             </p>
@@ -294,31 +297,261 @@
                 <p>
                     Bújom az inspirációkat, szomjazom az új ötleteket és folyamatosan képezem magam. Mindig újabb és újabb szerelembe esek,
                     nem tudom megunni a szakma szépségeit.
-                    Munkám során törekszem a környezetbe illő, <strong>egységes stílus</strong>ra, kerülöm az öncélú megvalósítást. Szeretem a
+                    Munkám során törekszem a környezetbe illő, <strong>egységes stílus</strong>ra, kerülöm az öncélú megvalósítást. Szeretem
+                    a
                     <strong>letisztult</strong>
-                    dolgokat és legfőbb feladatom a <strong>harmónia</strong> létrehozása. Mint minden <strong>kreatív</strong> ember, én is nagyon boldog vagyok amikor
-                    megajándékoztok az <strong>alkotói szabadság</strong> örömével, ezzel bizalmat szavazva a szépérzékemnek és szakmaiságomnak,
+                    dolgokat és legfőbb feladatom a <strong>harmónia</strong> létrehozása. Mint minden <strong>kreatív</strong> ember, én is
+                    nagyon boldog vagyok amikor
+                    megajándékoztok az <strong>alkotói szabadság</strong> örömével, ezzel bizalmat szavazva a szépérzékemnek és
+                    szakmaiságomnak,
                     természetesen szem előtt tartva a Ti személyiségeteket és elképzeléseiteket.
                 </p>
             </div>
         </section>
-        <section class="text-center">
-            <h2>Árajánlat</h2>
-            <p>
-                Esküvői grafikák árairól e-mailen keresztül tudsz érdeklődni. A legpontosabb kalkulációt akkor tudom elkészíteni, ha rögtön
-                az első levélben leírsz néhány fontos információt. Jelesül:
-                Mi az esküvő dátuma, helyszíne?
-                Milyen meghívót képzeltél el és hány darabra van szükség?
-                Mikor szeretnétek a meghívókat átvenni?
-                Hány fős násznéppel számoltok?
-                Küldj néhány inspirációs fotót az esküvő elképzelt stílusáról, színvilágáról, virágokról, dekorációs elemekről, a ruhádról
-                vagy bármiről, ami egyértelműen segítségemre lesz abban, mi tükrözi
-                leginkább a személyiségeteket! Nyugodtan rám szabadíthatod a telefonodon összegyűlt képeidet, ez most igazán hasznos lesz
-                számunkra! :)
-            </p>
+        <section>
+            <h2 class="text-center">Árajánlat</h2>
+            <form action="/" data-component="ajax-form">
+                <div class="row">
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="name-input" class="required">Név</label>
+                            <input type="text" name="name" id="name-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="phone-number-input" class="required">Telefonszám</label>
+                            <input type="text" name="phone-number" id="phone-number-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="email-input" class="required">E-mail cím</label>
+                            <input type="email" name="email" id="email-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label class="required">Esküvő dátuma</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <select class="form-control" name="wedding-date-year" id="wedding-date-year" required>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5">
+                                    <select class="form-control" name="wedding-date-month" id="wedding-date-month" required>
+                                        <option value="1">Jan</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">Mar</option>
+                                        <option value="4">Apr</option>
+                                        <option value="5">May</option>
+                                        <option value="6">Jun</option>
+                                        <option value="7">Jul</option>
+                                        <option value="8">Aug</option>
+                                        <option value="9">Sep</option>
+                                        <option value="10">Oct</option>
+                                        <option value="11">Nov</option>
+                                        <option value="12">Dec</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-control" name="wedding-date-day" id="wedding-date-day" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="place-input" class="required">Esküvő helyszíne</label>
+                            <input type="text" name="place" id="place-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="guests-input" class="required">Vendégek tervezett száma</label>
+                            <input type="text" name="guests" id="guests-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="colors-input">Színvilág</label>
+                            <input type="text" name="colors" id="colors-input" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="styles-input">Stílusjegyek</label>
+                            <input type="text" name="styles" id="styles-input" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="invitation-count-input" class="required">Meghívó darabszáma</label>
+                            <input type="text" name="invitation-count" id="invitation-count-input" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="invitation-date-input">Meghívó átvételének tervezett időpontja</label>
+                            <input type="text" name="invitation-date" id="invitation-date-input" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="invitation-type-input" class="required">Meghívó típusa</label>
+                            <select class="form-control" name="invitation-type" id="invitation-type-input" required>
+                                <option value="A6 kártya borítékkal">A6 kártya borítékkal</option>
+                                <option value="A6 kinyitható kártya borítékkal">A6 kinyitható kártya borítékkal</option>
+                                <option value="B6 kártya borítékkal">B6 kártya borítékkal</option>
+                                <option value="B6 kinyitható kártya borítékkal">B6 kinyitható kártya borítékkal</option>
+                                <option value="Négyzetes kártya borítékkal">Négyzetes kártya borítékkal</option>
+                                <option value="Négyzetes kinyitható kártya borítékkal">Négyzetes kinyitható kártya borítékkal</option>
+                                <option value="Egyéb elképzelésünk van">Egyéb elképzelésünk van</option>
+                                <option value="Nem kérünk meghívót">Nem kérünk meghívót</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-group">
+                            <label for="invitation-extras-input">Meghívó extrák</label>
+                            <select class="form-control" name="invitation-extras" id="invitation-extras-input">
+                                <option value="Pausz borító">Pausz borító</option>
+                                <option value="Viaszpecsét">Viaszpecsét</option>
+                                <option value="Borítékbélés">Borítékbélés</option>
+                                <option value="Címzőmatrica borítékra">Címzőmatrica borítékra</option>
+                                <option value="Szalag">Szalag</option>
+                                <option value="Pausz borító + cérna + viaszpecsét">Pausz borító + cérna + viaszpecsét</option>
+                                <option value="Pausz borító + szalag + viaszpecsét">Pausz borító + szalag + viaszpecsét</option>
+                                <option value="Egyéb elképzelésünk van">Egyéb elképzelésünk van</option>
+                                <option value="Nem kérünk extrákat">Nem kérünk extrákat</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="sitting-card">
+                            <label class="form-check-label" for="sitting-card">Ültetőkártya</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="menu-card">
+                            <label class="form-check-label" for="menu-card">Menükártya</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="table-number">
+                            <label class="form-check-label" for="table-number">Asztalszám</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="welcome-board">
+                            <label class="form-check-label" for="welcome-board">Üdvözlőtábla</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="sitting-order">
+                            <label class="form-check-label" for="sitting-order">Ültetési rend</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="program-board">
+                            <label class="form-check-label" for="program-board">Programtábla</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="gift-stickers">
+                            <label class="form-check-label" for="gift-stickers">Köszönőajándékra matrica / kis kártya</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="photo-album">
+                            <label class="form-check-label" for="photo-album">Vendégkönyv / fotóalbum</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="photo-frame">
+                            <label class="form-check-label" for="photo-frame">Fotókeret</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-field">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="photocorner-introduction">
+                            <label class="form-check-label" for="photocorner-introduction">Fotósarok instrukciós lap</label>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="notes-input">Megjegyzés</label>
+                        <textarea cols="70" rows="8" type="text" name="notes" id="notes-input" class="form-control"
+                                  aria-describedby="notes-help"></textarea>
+                        <small id="notes-help" class="form-text text-muted">Itt leírhatod minden olyan elképzelésedet, amire a fentiekben
+                            nem tudtál kitérni.
+                        </small>
+                    </div>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LcwqvgUAAAAACKdtMIfJhP7ZjLr-wA9eJKY5ezm"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">KÉREM AZ AJÁNLATOT</button>
+                    <div class="text-primary hidden" data-component="success-message">
+                        <strong>Köszönjük türelmedet, néhány munkanapon belül válaszolunk!</strong>
+                    </div>
+                    <div class="text-danger hidden" data-component="error-message">
+                        <strong>Hiba történt az űrlap elküldésekor, próbálkozz később, vagy lépj kapcsolatba velünk az <strong>info {kukac}
+                            decorharmony.hu</strong> e-mail címen keresztül!</strong>
+                    </div>
+                </div>
+            </form>
         </section>
         <h2 class="text-center farewell">
-            HA ÚGY ÉRZED, KÉSZEN ÁLLSZ AZ ESKÜVŐD GRAFIKAI ARCULATÁNAK KIALAKÍTÁSÁRA ÉS MÁR ALIG VÁROD, HOGY KIOSZTHASD A MEGHÍVÓKAT, VÁGJUNK BELE MIELŐBB!
+            HA ÚGY ÉRZED, KÉSZEN ÁLLSZ AZ ESKÜVŐD GRAFIKAI ARCULATÁNAK KIALAKÍTÁSÁRA ÉS MÁR ALIG VÁROD, HOGY KIOSZTHASD A MEGHÍVÓKAT,
+            VÁGJUNK BELE MIELŐBB!
         </h2>
         <div class="text-center mt-5">
             <a href="https://instagram.com/decorharmony/" target="_blank">instagram</a>
