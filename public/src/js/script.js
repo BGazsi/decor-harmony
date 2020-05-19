@@ -17,7 +17,7 @@ ready(function () {
   var handleSubmit = function (event) {
     event.preventDefault()
     event.stopImmediatePropagation()
-    var url = 'https://formspree.io/xlepggvj'
+    var url = 'https://formspree.io/mgenoljq'
     var formData = new FormData(event.currentTarget)
 
     fetch(url, {
