@@ -25,6 +25,9 @@ ready(function () {
       redirect: 'manual',
       body: formData,
     }).then(function (response) {
+      if (response.status >= 300) {
+        return document.querySelector('[data-component="error-message"]').classList.remove('hidden')
+      }
       document.querySelector('.btn-primary').classList.add('hidden')
       document.querySelector('.btn-primary').disabled = true
       document.querySelector('[data-component="success-message"]').classList.remove('hidden')

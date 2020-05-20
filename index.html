@@ -411,7 +411,7 @@
                     <div class="col-sm-6 form-field">
                         <div class="form-group">
                             <label for="guests-input" class="required">Vendégek tervezett száma</label>
-                            <input type="number" name="Vendégek tervezett száma" id="guests-input" class="form-control" required/>
+                            <input type="number" min="0" name="Vendégek tervezett száma" id="guests-input" class="form-control" required/>
                         </div>
                     </div>
                     <div class="col-sm-6 form-field">
@@ -429,7 +429,7 @@
                     <div class="col-sm-6 form-field">
                         <div class="form-group">
                             <label for="invitation-count-input" class="required">Meghívó darabszáma</label>
-                            <input type="number" name="Meghívó darabszáma" id="invitation-count-input" class="form-control" required/>
+                            <input type="number" min="0" name="Meghívó darabszáma" id="invitation-count-input" class="form-control" required/>
                         </div>
                     </div>
                     <div class="col-sm-6 form-field">
@@ -551,12 +551,12 @@
                 <div class="g-recaptcha" data-sitekey="6LcwqvgUAAAAACKdtMIfJhP7ZjLr-wA9eJKY5ezm"></div>
                 <div class="text-center mt-2">
                     <button type="submit" class="btn btn-primary">KÉREM AZ AJÁNLATOT</button>
-                    <div class="text-primary hidden" data-component="success-message">
+                    <div class="text-primary hidden mt-2" data-component="success-message">
                         <strong>Köszönjük türelmedet, néhány munkanapon belül válaszolunk!</strong>
                     </div>
-                    <div class="text-danger hidden" data-component="error-message">
-                        <strong>Hiba történt az űrlap elküldésekor, próbálkozz később, vagy lépj kapcsolatba velünk az <strong>info {kukac}
-                            decorharmony.hu</strong> e-mail címen keresztül!</strong>
+                    <div class="text-danger hidden mt-2" data-component="error-message">
+                        Hiba történt az űrlap elküldésekor, próbálkozz később, vagy lépj kapcsolatba velünk az <strong>info {kukac}
+                            decorharmony.hu</strong> e-mail címen keresztül!
                     </div>
                 </div>
             </form>
